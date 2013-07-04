@@ -1,0 +1,9 @@
+[submodule "wordpress-akismet"]
+	path = wordpress-akismet
+	url = https://github.com/git-mirror/wordpress-akismet.git
+[submodule "shashin"]
+	path = shashin
+	url = https://github.com/WordPress-Plugins-Themes/shashin.git
+[submodule "toppa-plugin-libraries-for-wordpress"]
+	path = toppa-plugin-libraries-for-wordpress
+	url = https://github.com/WordPress-Plugins-Themes/toppa-plugin-libraries-for-wordpress.git
