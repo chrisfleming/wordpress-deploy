@@ -53,6 +53,11 @@ namespace :deploy do
 
       # link in templates
       run "for i in `ls #{current_path}/themes`; do echo $i; ln -sf #{current_path}/themes/$i #{current_path}/wordpress/wp-content/themes/$i; done"
+
+      # set version of wordpress
+      run "cd #{current_path}/wordpress; git checkout 3.5.2"
   end
+
+
     
 end
