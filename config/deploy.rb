@@ -26,7 +26,7 @@ namespace :deploy do
   task :default do
     transaction do
       update_code
-      symlink
+      create_symlink
     end
   end
  
@@ -41,7 +41,7 @@ namespace :deploy do
     cleanup
   end
 
-  task :after_symlink do
+  task :after_create_symlink do
       # NFS mounted directory for uploads.
       run "ln -nfs /var/www/bullfarmoast-blog/uploads" \
       " #{current_path}/wordpress/wp-content/"
