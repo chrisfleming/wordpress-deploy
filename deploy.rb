@@ -26,7 +26,7 @@ namespace :deploy do
   task :default do
     transaction do
       update_code
-      symlink
+      create_symlink
     end
   end
  
